@@ -1,4 +1,4 @@
-import { FormEvent } from "react"
+import { FormEvent } from 'react'
 
 interface Props {
   submitHandler: (e: FormEvent<HTMLFormElement>) => void

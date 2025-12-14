@@ -10,9 +10,8 @@ import { ModalContent } from './Components/ModalContent'
 import { LeftBloc } from './Components/LeftBloc'
 import { RigthBloc } from './Components/RigthBloc'
 
-const leftWeight = 12
-const rightWeight = 18
-const valueNum = 5
+const valueNum = 4
+const answer = 2
 
 function App() {
   const [catWeight, setCatWeight] = useState<string>('')
@@ -23,16 +22,12 @@ function App() {
     setIsOpen(true)
   }
 
-  const isBalanced = leftWeight + Number(catWeight) === rightWeight
-
   return (
     <div>
       <h2>
         Эгер мый-мый турган жактагы табакчасына <br /> {valueNum}кг салмак
         кошсо, тараза тен салмакта болот. Ошондо мышык канча кг?
       </h2>
-
-      <h4>{`${valueNum}`} + Мышыктын салмагын тапсан тараза тен болот</h4>
 
       <section className='app'>
         <img className='base' src={base} alt='base' />
@@ -45,9 +40,9 @@ function App() {
         </div>
 
         <div className='flex'>
-          <LeftBloc isBalanced={isBalanced} />
+          <LeftBloc />
 
-          <RigthBloc isBalanced={isBalanced} />
+          <RigthBloc />
         </div>
       </section>
 
@@ -59,7 +54,8 @@ function App() {
 
       <Modal isOpen={isOpen}>
         <ModalContent
-          isBalanced={isBalanced}
+          answer={answer}
+          catWeight={catWeight}
           setIsOpen={setIsOpen}
           setCatWeight={setCatWeight}
         />

@@ -1,6 +1,9 @@
+h1 {
+  line-height: 70px;
+}
 h2 {
   width: 900px;
-  margin: 30px auto 50px auto;
+  margin: 50px auto 80px auto;
   text-align: center;
 }
 h4 {
@@ -8,6 +11,7 @@ h4 {
   padding-bottom: 30px;
   text-align: center;
 }
+
 .base {
   display: block;
   margin: 0 auto;
@@ -18,10 +22,8 @@ h4 {
 .holders {
   margin: 0 auto;
   width: 440px;
-
   display: flex;
   justify-content: space-between;
-
   margin-top: -130px;
 }
 
@@ -36,12 +38,13 @@ h4 {
   width: 650px;
   margin-top: -390px;
 }
+
 .rigth_bloc {
   display: flex;
   flex-direction: column;
 }
 .dumbbell_rigth {
-  width: 90px;
+  width: 100px;
   margin-left: 60px;
 }
 .panse_rigth {
@@ -51,19 +54,18 @@ h4 {
 
 .panse_left {
   width: 220px;
-  margin-bottom: -140px;
+  margin-bottom: -125px;
 }
-
 .dumbbell_left {
-  width: 60px;
-  margin-left: 50px;
+  width: 70px;
+  margin-left: 30px;
 }
 .cat {
   width: 90px;
 }
-
 .left_bloc {
-  margin-top: 40px;
+  margin-top: -100px;
+  margin-bottom: 150px;
 }
 
 .flex {
@@ -82,10 +84,6 @@ h4 {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-}
-
-h3 {
-  font-size: 22px;
 }
 
 input {
